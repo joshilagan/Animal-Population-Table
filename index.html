@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Animal Population</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body class="vh-100">
+    <div class="head h-100">
+        <div class="animalTable table responsive pt-5">
+            <h2 class="text-center pb-2">Animal Population</h2>
+            <table class="table table-striped table-hover mx-auto w-auto ">
+                <thead>
+                    <tr>
+                        <th class="text-center w-25" scope="col">POLAR BEAR</th>
+                        <th class="text-center w-25" scope="col">GRIZZLY BEAR</th>
+                        <th class="text-center w-25" scope="col">TEDDY BEAR</th>
+                        <th class="text-center w-25" scope="col">WE BARE BEARS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">100</td>
+                        <td class="text-center">200</td>
+                        <td class="text-center">300</td>
+                        <td class="text-center">400</td>
+                    </tr>
+                </tbody>
+            </table>       
+        </div>
+        <div class="formsContainer d-flex justify-content-center pt-4">
+            <form id="animal-form" class="d-flex flex-column border border-info rounded-3 bg-secondary w-20 p-4 m-4">
+                <h5 class="text-white">Update Animal Population</h5>
+                <label for="type" class="pb-2">Bear Type</label>
+                <select name="bearType" id="type" class="rounded-3" >
+                    <option value="polarbear">POLAR BEAR</option>
+                    <option value="grizzlybear">GRIZZLY BEAR</option>
+                    <option value="teddybear">TEDDY BEAR</option>
+                    <option value="webarebears">WE BARE BEARS</option>
+                </select>
+                <label for="newnum" class="pb-2 pt-3">New Population Number</label>
+                <input type="text" id="newnum" name="newNumber" class="input-num rounded-3">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" id="btn" class="edit-bear mt-2">Update Bear</button>
+                </div>
+            </form>     
+        </div>
+    </div>
+    <footer class="bg-info ">
+        <h4 class="text-center p-3 m-0">Powered by Josh9jutsu</h4>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
